@@ -1,0 +1,14 @@
+name: zip
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    steps:
+    - name: zip
+      uses: kaname-samcraft/resourcepack_zipper@main
+      with:
+        version_path: "[1]"
