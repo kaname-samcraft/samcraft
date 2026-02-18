@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures":
   {
-    "layer0": "onigokko:item/search"
+    "layer0": "onigokko:item/search_icon"
   }
 }
